@@ -1,0 +1,1 @@
+/* eslint-disable */  export default ({'login':'Login','acc':'Account','pwd':'Password','enterAcc':'Please enter your account','enterPwd':'Please enter your password','rememberAcc':'RemeberAcc','title1':'台電資通所','title2':'發電變動量指標平台',})

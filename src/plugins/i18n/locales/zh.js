@@ -1,0 +1,1 @@
+/* eslint-disable */  export default ({'locale':'zh','app.learn':'測試 {name}','login':'登入','login.account':'帳號','login.email':'信箱','login.password':'密碼','msg.inputAccount':'請輸入帳號','msg.inputPassword':'請輸入密碼','success':'成功','err.NetworkErr':'網路異常',})

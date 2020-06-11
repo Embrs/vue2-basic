@@ -1,0 +1,77 @@
+// background
+$bgc_base: rgb(11, 7, 31);
+$bgc_base2: #09203f;
+$bgc_base_alpha: rgba(11, 7, 31, 0.8);
+$bgc_base2_aplha: rgba(8, 32, 62, 0.8);
+$bgc_base_alpha-real: rgb(11, 7, 31);
+$bgc_base2_aplha-real: rgb(8, 32, 62);
+$bgc_obj: #1A1E3D;
+$bgc_txt: rgb(255, 255, 255);
+$bgc_hover: rgb(33, 63, 102);
+$bgc_selected: rgb(75, 139, 113);
+$bgc_table: rgb(22, 25, 51);
+$bgc_table_odd: #1d2942;
+$bgc_table_err: rgb(90, 34, 58);
+$bgc_th: rgb(23, 24, 37);
+$bgc_share: rgb(34, 50, 75);
+// font
+$fc_base: rgb(255, 255, 255);
+$fc_dark: rgb(173, 211, 247);
+$fc_blue: rgb(56, 210, 245);
+$fc_yello: rgb(209, 211, 123);
+$fc_yello2: rgb(255, 220, 21);
+$fc_green: rgb(168, 255, 236); 
+$fc_darkRed: rgb(156, 18, 18);
+$fc_alarm: rgb(194, 122, 223);
+$fc_ps: rgb(255, 109, 170);
+$fc_error: rgb(209, 78, 89);
+$fc_success: rgb(91, 212, 54);
+$fc_menu: rgb(56, 210, 245);
+$fc_title: rgb(255, 255, 255);
+$fc_title2: rgb(162, 233, 255);
+$fc_title3: rgb(152, 231, 255);
+$fc_hover: rgb(130, 220, 247);
+$fc_active: rgb(97, 174, 197);
+$fc_time: rgb(119, 243, 185);
+$fc_signup: rgb(162, 233, 255);
+$fc_signup2: rgb(255, 255, 255);
+// user
+$fc_admin: rgb(253, 217, 13);
+$fc_user: rgb(238, 253, 170);
+// icon
+$fc_icon1: rgb(56, 210, 245);
+$fc_icon2: rgb(255, 255, 255);
+// shadow
+$sc_base: 0px 0px 10px 1px rgba(0, 0, 0, 0.351);
+$sc_table: 0px 0px 10px 1px rgba(52, 56, 63, 0.158);
+$sc_line: 0 9px 1px -8.5px  #3073b1;
+$sc_line2: 0 9px 1px -8.5px  #204d88;
+// table
+$tbc_hover: rgb(34, 66, 109);
+// back top
+$btc_base: rgba(74, 166, 202, 0.8);
+// status
+$sc_close: rgb(105, 105, 105);
+$sc_success: rgb(138, 253, 71);
+$sc_error: rgb(255, 76, 5);
+// border
+$bc_table: #3073b1;
+// tag
+$bg_tag_success: rgb(18, 145, 60);
+$fc_tag_success: #fff;
+$bg_tag_default: rgb(236, 236, 236);
+$fc_tag_default: rgb(81, 85, 94);
+$bg_tag_check: rgb(228, 141, 11);
+$fc_tag_check: rgb(255, 255, 255);
+
+// table page
+$tc_tablepage: rgb(56, 210, 245);
+$bgc_tablepage: rgb(30, 57, 92);
+$bc_tablepage: rgb(33, 75, 129);
+$bgc_hover_tablepage: rgb(50, 89, 141);
+$bc_hover_tablepage: rgb(255, 255, 255);
+// $sc_error: rgb(224, 54, 2);
+// loading
+$fc_loading: rgb(177, 252, 236);
+// datepicker
+$bgc_date_disable: rgb(154, 160, 172);

@@ -1,0 +1,76 @@
+%init {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  /* margin padding 標準化 */
+  body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+  }
+  /* 標題 font-size 的標化 */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+  }
+  ul, ol {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  // scrollbar
+  /* width */
+  ::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+    margin: 5px;
+  }
+  /* button */
+  ::-webkit-scrollbar-button {
+    // background: rgb(34, 34, 34); 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(18, 175, 236);
+    border-radius: 20px;
+    border: 2px solid #1A1E3D;
+    cursor: pointer !important;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(122, 205, 238);
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(27, 240, 240, 0.5);
+    // border-radius: 20px;
+    border: 5px solid #1A1E3D;
+  }
+  /* The track NOT covered by the handle.
+  ::-webkit-scrollbar-track-piece {
+    background: #000; 
+  }
+  /* Corner */
+  ::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0);
+  }
+  /* Resizer */
+  ::-webkit-resizer {
+    // background: #111; 
+  }
+}
+
+%VueTransition {
+  .fade-enter-active,
+  .fade-leave-active
+  {
+      transition: opacity .3s;
+  }
+
+  .fade-enter,
+  .fade-leave-active
+  {
+      opacity: 0;
+  }
+}
+
