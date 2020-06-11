@@ -1,5 +1,4 @@
-const useHash = false;
-
+const useHash = true;
 function b64e(str) {
   return btoa(
     encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) {
@@ -17,37 +16,21 @@ function b64d(str) {
       .join("")
   );
 }
-
 Storage.prototype.setObjectHash = function(key, myObject) {
-  const newObject = {};
   if (useHash) {
-    Object.keys(myObject).map(function(value) {
-      newObject[value] = b64e(myObject[value]);
-    });
-    this.setItem(b64e(key), b64e(JSON.stringify(newObject)));
+    // 加密 key 與 data
+    this.setItem(b64e(key), b64e(JSON.stringify(myObject)));
     return;
   }
-  Object.keys(myObject).map(function(value) {
-    newObject[value] = myObject[value];
-  });
-  this.setItem(key, JSON.stringify(newObject));
+  this.setItem(key, JSON.stringify(myObject));
 };
 
 Storage.prototype.getObjectHash = function(key) {
+  // 加密 key 取加密 data
   const myObject = useHash ? this.getItem(b64e(key)) : this.getItem(key);
   if (!myObject) return null;
   if (useHash) {
-    return (
-      b64d(myObject) &&
-      JSON.parse(b64d(myObject), function(key) {
-        return key ? b64d(this[key]) : this[key];
-      })
-    );
+    return b64d(myObject) && JSON.parse(b64d(myObject));
   }
-  return (
-    myObject &&
-    JSON.parse(myObject, function(key) {
-      return key ? this[key] : this[key];
-    })
-  );
+  return myObject && JSON.parse(myObject);
 };
