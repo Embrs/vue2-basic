@@ -61,9 +61,8 @@ const rbacPlugin = {};
 rbacPlugin.install = Vue => {
   Vue.directive("rbac", {
     async bind(el, binding) {
-      const { role } = localStorage.getObjectHash("user");
-
-      const _can = await can(role, binding.value, "components");
+      const brandRule = localStorage.getObjectHash(window.brandRule);
+      const _can = await can(brandRule.role, binding.value, "components");
 
       // disable components
       if (_can && binding.modifiers.disable) {
