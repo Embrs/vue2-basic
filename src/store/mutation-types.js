@@ -1,3 +1,4 @@
 export default {
-  BASEINFO: "BASEINFO"
+  GLOBAL_MASK: "GLOBAL_MASK",
+  LANGUAGE: "LANGUAGE"
 };
